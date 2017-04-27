@@ -1,0 +1,19 @@
+div.widget-inner{
+	button.bookmark-widget.btn{
+		display: none;
+		float: left;
+		border-radius: 15px;
+		padding: 2px 5px;
+	}
+	div.bookmarkBlock:hover{
+		button{
+			display: block;
+			margin : 3px;
+		}
+		outline: none;
+		top: -.5em;
+		left: -.5em;
+		box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+	}
+
+}
