@@ -54,7 +54,7 @@ getData(){
     else
     {
         self.state.loaded = true;
-        self.state.contents.push(h("span.title-widget.no-bookmark", I18n.t("main.bookmark-no")));
+        self.state.contents.push(h("span.title-widget.no-bookmark", [I18n.t("main.bookmark-no"), h("a.link.link-widget",{attributes: {href:I18n.t("main.more-detail-link")}}, I18n.t("main.more-detail"))]));
         self.scheduleRerender();
     }
 },
