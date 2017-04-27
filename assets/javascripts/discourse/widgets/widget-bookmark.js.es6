@@ -45,7 +45,7 @@ getData(){
                         break;
                 }
                 if (!bookmarked) 
-                    self.state.contents.push(h("span.title-widget.no-bookmark", I18n.t("main.bookmark-no")));
+                    self.state.contents.push(h("span.title-widget.no-bookmark", [I18n.t("main.bookmark-no"), h("a.link.link-widget",{attributes: {href:I18n.t("main.more-detail-link")}}, I18n.t("main.more-detail"))]));
                 else
                     self.state.contents.push(h("a.link.more-bookmark", {attributes:{href: `u/${user}/activity/bookmarks`}}, I18n.t("main.bookmark-more")));
                 self.scheduleRerender();
