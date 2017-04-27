@@ -51,6 +51,12 @@ getData(){
                 self.scheduleRerender();
             });
     }
+    else
+    {
+        self.state.loaded = true;
+        self.state.contents.push(h("span.title-widget.no-bookmark", I18n.t("main.bookmark-no")));
+        self.scheduleRerender();
+    }
 },
 
 html(attrs, state) {
