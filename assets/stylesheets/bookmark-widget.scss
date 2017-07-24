@@ -3,7 +3,10 @@ html.anon .sidebar .widget-bookmark
 	display: none;
 }
 
-h1{
+
+
+div.widget-inner{
+	h1{
 	font-size: 18px;
 -webkit-margin-before: 0.83em;
 -webkit-margin-after: 0.83em;
@@ -13,8 +16,6 @@ line-height: 1.4;
 margin-bottom: 20px;
 font-weight: 300;
 }
-
-div.widget-inner{
 	button.bookmark-widget.btn{
 		display: none;
 		float: right;
