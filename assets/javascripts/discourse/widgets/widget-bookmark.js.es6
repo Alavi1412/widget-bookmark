@@ -40,7 +40,6 @@ getData(){
                         {href: "/t/" + bookmarked[i].slug + "/" + bookmarked[i].topic_id }},
                         h("span.title-widget", bookmarked[i].title))]));
 
-                    self.state.contents.push(h("br"));
                     if (i == 5)
                         break;
                 }
@@ -64,7 +63,6 @@ html(attrs, state) {
     if (state.loaded == false)
     {
         state.contents.push(h("h1.header-widget",I18n.t("main.bookmark-you")))
-        state.contents.push(h("br"));
         this.getData();}
         return h('div.widget-inner', state.contents);
     },
