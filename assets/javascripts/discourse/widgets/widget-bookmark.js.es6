@@ -63,7 +63,7 @@ html(attrs, state) {
 
     if (state.loaded == false)
     {
-        state.contents.push(h("span.header-widget",I18n.t("main.bookmark-you")))
+        state.contents.push(h("h1.header-widget",I18n.t("main.bookmark-you")))
         state.contents.push(h("br"));
         this.getData();}
         return h('div.widget-inner', state.contents);
