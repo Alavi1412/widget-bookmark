@@ -6,7 +6,7 @@ register_asset 'stylesheets/bookmark-widget.scss'
 
 after_initialize do
 	
-  SiteSetting.class_eval do
-    @choices[:layouts_sidebar_right_widgets].push('widget-bookmark')
-  end
+  #SiteSetting.class_eval do
+  #  @choices[:layouts_sidebar_right_widgets].push('widget-bookmark')
+  #end
 end
