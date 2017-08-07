@@ -9,4 +9,5 @@ after_initialize do
   #SiteSetting.class_eval do
   #  @choices[:layouts_sidebar_right_widgets].push('widget-bookmark')
   #end
+  DiscourseLayouts::WidgetHelper.add_widget('widget-bookmark')
 end
